@@ -167,7 +167,7 @@ html, body {
 			border-bottom: 1px solid #999999;
 		}
 			.latestNews-one:hover {
-				border-bottom-color: #999999;
+				border-bottom: 1px solid #999999 !important;
 			}
 			.latestNews-one__first {
 				padding-top: 0px !important;
