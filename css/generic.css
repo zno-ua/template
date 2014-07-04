@@ -1,0 +1,179 @@
+
+/* ==========================================================================
+	 Base styles: opinionated defaults
+	 ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	font-family: "Open Sans";
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.hidden {
+	display: none;
+}
+
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+.fl_l {
+	float:left;
+}
+
+.fl_r {
+	float:right;
+}
+
+.animate {
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -kthtml-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+/* ==========================================================================
+	 Typography
+	 ==========================================================================	*/
+.main a, .footer a {
+	color: #666666;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+	.main a:hover, .footer a:hover {
+		border-bottom: 1px solid transparent;
+		color: #555555;
+	}
+
+	.main a.noborder, .footer a.noborder {
+		border-bottom: 1px solid transparent;
+	}
+
+p {
+	margin: 0 0 24px;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+small {
+	font-size: 85%;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1 {
+	font-family: OpenSans;
+	font-weight: bold;
+	font-size: 26px;
+	color: #4A4A4A;
+	line-height: 32px;
+	margin-bottom: 28px;
+}
+h2 {
+	font-family: OpenSans;
+	font-weight: bold;
+	font-size: 22px;
+	color: #4A4A4A;
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+h3 {
+	font-family: OpenSans;
+	font-size: 24px;
+	color: #4A4A4A;
+	line-height: 33px;
+	margin-bottom: 22px;
+}
+h4 {
+	font-family: OpenSans;
+	font-size: 20px;
+	color: #4A4A4A;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+
+.button {
+	margin: 10px 0;
+	display: inline-block;
+	border-radius: 6px;
+	background-image: -o-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%);
+	background-image: -moz-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%);
+	background-image: -ms-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%);
+	background-image: linear-gradient(-179deg, #F4F4F4 0%, #D9D9D9 100%);
+	border: 1px solid #979797;
+	-moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 2px 0px 0px #FFFFFF;
+	box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 2px 0px 0px #FFFFFF;
+	font-family: "OpenSans";
+	font-size: 16px;
+	color: #666666;
+	line-height: 24px;
+	padding: 8px 25px;
+	cursor: pointer;
+	text-shadow: 0px 1px 0px #FFFFFF;
+
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-kthtml-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+	.button:hover {
+		background-image: -webkit-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%);
+		background-image: -moz-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%);
+		background-image: -o-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%);
+		box-shadow: none;
+		-moz-box-shadow: none;
+	}
+	.button__block {
+		width: 250px;
+		display: block;
+	}
+	.button__center {
+		margin: auto;
+		text-align: center;
+	}
+	.button__loading {
+		opacity: 0.7;
+	}
