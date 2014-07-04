@@ -356,9 +356,9 @@ html, body {
 			}
 				.test-question-answer {
 					cursor: pointer;
-					padding: 1.5px 0;
+					padding: 1.5px 0 0 2%;
 					display: block;
-					width: 438px;
+					width: 80%;
 					height: 28px;
 					border: 1px solid transparent;
 					line-height: 28px;
@@ -373,19 +373,40 @@ html, body {
 						background-color: #FCFCFC;
 						border: 1px solid #D3D3D3;
 					}
+						.main-test__results .test-question-answer:hover {
+							background: none;
+							border: 1px solid transparent;
+						}
 
 					.test-question-answer__active {
-						background-image: -o-linear-gradient(-89deg, #5F86B6 0%, #17549F 100%);
-						background-image: -moz-linear-gradient(-89deg, #5F86B6 0%, #17549F 100%);
-						background-image: -ms-linear-gradient(-89deg, #5F86B6 0%, #17549F 100%);
-						background-image: linear-gradient(-179deg, #5F86B6 0%, #17549F 100%);
+						background-image: -moz-linear-gradient(-89deg, #5F86B6 0%, #17549F 100%) !important;
+						 background-image: -ms-linear-gradient(-89deg, #5F86B6 0%, #17549F 100%) !important;
+						  background-image: -o-linear-gradient(-89deg, #5F86B6 0%, #17549F 100%) !important;
+						    background-image: linear-gradient(-179deg, #5F86B6 0%, #17549F 100%) !important;
 						border: 1px solid #D3D3D3;
 						color: #fff;
 					}
 
+					.test-question-answer__correct {
+						background-image: -moz-linear-gradient(-89deg, #7FC700 0%, rgba(40,142,0,0.87) 100%) !important;
+						 background-image: -ms-linear-gradient(-89deg, #7FC700 0%, rgba(40,142,0,0.87) 100%) !important;
+						  background-image: -o-linear-gradient(-89deg, #7FC700 0%, rgba(40,142,0,0.87) 100%) !important;
+							background-image: linear-gradient(-179deg, #7FC700 0%, rgba(40,142,0,0.87) 100%) !important;
+						border: 1px solid #7FC700 !important;
+						color: #fff;
+					}
+
+					.test-question-answer__incorrect {
+						background-image: -moz-linear-gradient(-89deg, #FF8045 0%, #F78341 100%) !important;
+						 background-image: -ms-linear-gradient(-89deg, #FF8045 0%, #F78341 100%) !important;
+						  background-image: -o-linear-gradient(-89deg, #FF8045 0%, #F78341 100%) !important;
+							background-image: linear-gradient(-179deg, #FF8045 0%, #F78341 100%) !important;
+						border: 1px solid #F78341 !important;
+						color: #fff;
+					}
+
 					.test-question-radio {
-						top: -2.5px;
-						margin-left: 7px;
+						top: -3px;
 						margin-right: 7px;
 					}
 
@@ -396,11 +417,33 @@ html, body {
 				.test-question-slider {
 					width: 50%;
 				}
+				
+				.test-question-sliderAfter {
+
+				}
+					.test-question-sliderAfter__ball {
+						font-weight: bold;
+					}
 				.test-question-workBall {
 					width: 2em;
 				}
+			.test-question-mistake {
+				font-family: Arial;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				font-size: 10px;
+				opacity: 0.6;
+				text-decoration: underline !important;
+			}
+				.test-question-mistake:hover {
+					opacity: 1;
+				}
 		.test-endButton {
 			margin: 50px auto 30px;
+		}
+		.test-results {
+
 		}
 
 

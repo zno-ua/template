@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Сторінка з тестом — ЗНО-2015</title>
+	<title>Сторінка з результатами тестів — ЗНО-2015</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -34,18 +34,21 @@
 	</div>
 
 	<div class="main cf">
-		<form class="main-test">
+		<form class="main-test main-test__results">
+			<div class="test-results">
+				<div class="results-ball"></div>
+			</div>
+
 			<div class="test-question cf">
 				<div class="test-question-text">
 					<strong>1.</strong> Правильно підкреслено літеру на позначення наголошеного звука в слові
 				</div>
 				<div class="test-question-answers">
-					<label class="test-question-answer"><input class="test-question-radio" type="radio" name="1" />Олень</label>
-					<label class="test-question-answer"><input class="test-question-radio" type="radio" name="1" />Олень</label>
-					<label class="test-question-answer"><input class="test-question-radio" type="radio" name="1" />Олень</label>
-					<label class="test-question-answer"><input class="test-question-radio" type="radio" name="1" />Олень</label>
+					<label class="test-question-answer">Олень</label>
+					<label class="test-question-answer test-question-answer__correct">Олень</label>
+					<label class="test-question-answer">Олень</label>
+					<label class="test-question-answer test-question-answer__incorrect">Олень</label>
 				</div>
-				<a href="" class="test-question-mistake noborder">Помилка?</a>
 			</div>
 			<div class="test-question test-question__text cf">
 				<p>Прочитайте текст і виконайте завдання 7—10.</p>
@@ -84,7 +87,7 @@
 				</p>
 				<p>Оберіть бал, на який розраховуєте:</p>
 				<p class="test-question-slider" data-max="20" data-start="10"></p>
-				<p class="test-question-sliderAfter">Обраний бал — <span class="test-question-sliderAfter__ball"></span>.<input name="232[]" type="hidden" value="25" disabled="disabled" class="test-question-workBall"></p>
+				<p class="test-question-sliderAfter">Обраний бал — <input name="232[]" value="25" disabled="disabled" class="test-question-workBall"></p>
 			</div>
 
 			<button class="button button__block button__center test-endButton" type="submit">Завершити тестування</button>

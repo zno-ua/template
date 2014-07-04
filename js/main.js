@@ -51,7 +51,9 @@ $(document).ready(function(){
             }
         });
         $(this).on('slide', function(){
-            $(this).siblings('.test-question-sliderAfter').find('.test-question-workBall').val(parseInt($(this).val()));
+            currentValue = parseInt($(this).val());
+            $(this).siblings('.test-question-sliderAfter').find('.test-question-sliderAfter__ball').html(currentValue);
+            $(this).siblings('.test-question-sliderAfter').find('.test-question-workBall').val(currentValue);
         }).trigger('slide');
     });
 
