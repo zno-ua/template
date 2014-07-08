@@ -39,6 +39,8 @@ $(document).ready(function(){
     $('a[rel=\'iload\']').fancybox();
 
     $('.test-question-slider').each(function(e) {
+        var questionId = $(this).data('question');
+        $(this).before('<p>Оберіть бал, на який розраховуєте:</p>').after('<p class="test-question-sliderAfter">Обраний бал — <input name="' + questionId + '" value="25" disabled="disabled" class="test-question-workBall"></p>');
         var startValue = ($(this).data('start'))?parseInt($(this).data('start')):0;
         var maxValue = ($(this).data('max'))?parseInt($(this).data('max')):10;
         $(this).noUiSlider({
