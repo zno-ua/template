@@ -26,7 +26,7 @@
 		<div class="header">
 			<a href="" class="header-logo"></a>
 			<ul class="header-menu">
-				<li class="header-menu-item"><a href="" class="header-menu-link header-menu-link__active"><span>Пройти тестування</span></a></li>
+				<li class="header-menu-item"><a href="" class="header-menu-link"><span>Пройти тестування</span></a></li>
 				<li class="header-menu-item"><a href="" class="header-menu-link"><span>Що здавати?</span></a></li>
 				<li class="header-menu-item"><a href="" class="header-menu-link"><span>Новини ЗНО</span></a></li>
 			</ul>
@@ -34,10 +34,26 @@
 	</div>
 
 	<div class="main cf">
-		<form class="main-test main-test__results">
-			<div class="test-results">
-				<div class="results-ball"></div>
+		<h2 class="center">Пробне тестування ЗНО з української мови 2014-го року</h2>
+		<div class="main-test main-test__results">
+			<div class="test-results cf">
+				<div class="results-ball">
+					<span class="results-ball_title">Рейтинговий бал</span>
+					<span class="results-ball_content">195</span>
+				</div>
+				<div class="results-ball">
+					<span class="results-ball_title">Тестовий бал</span>
+					<span class="results-ball_content">15</span>
+				</div>
+				<div class="results-ball">
+					<span class="results-ball_time">Тест пройдено 7 травня<br>за 5 хвилин</span>
+				</div>
+				<div class="results-ball results-ball__share">
+					share block
+				</div>
 			</div>
+
+			<div class="results-line"><span style="width:95%;"></span></div>
 
 			<div class="test-question cf">
 				<div class="test-question-text">
@@ -85,13 +101,11 @@
 				Як же відрізнити справжні чесноти від удаваних?
 				Викладіть Ваш погляд на цю проблему.
 				</p>
-				<p>Оберіть бал, на який розраховуєте:</p>
-				<p class="test-question-slider" data-max="20" data-start="10"></p>
-				<p class="test-question-sliderAfter">Обраний бал — <input name="232[]" value="25" disabled="disabled" class="test-question-workBall"></p>
+				<p class="test-question-slider" data-question="66" data-max="20" data-start="10"></p>
 			</div>
 
 			<button class="button button__block button__center test-endButton" type="submit">Завершити тестування</button>
-		</form>
+		</div>
 	</div>
 </div>
 
