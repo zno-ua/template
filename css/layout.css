@@ -358,7 +358,7 @@ html, body {
 					cursor: pointer;
 					padding: 1.5px 0 0 2%;
 					display: block;
-					width: 80%;
+					width: 98%;
 					height: 28px;
 					border: 1px solid transparent;
 					line-height: 28px;
@@ -410,6 +410,11 @@ html, body {
 						margin-right: 7px;
 					}
 
+					.test-question-answers-text {
+						margin-top: 10px;
+						display: block;
+					}
+
 				.test-question-select {
 					margin-bottom: 23px;
 				}
@@ -433,18 +438,59 @@ html, body {
 				left: 0;
 				bottom: 0;
 				font-size: 10px;
-				opacity: 0.6;
+				opacity: 0.3;
 				text-decoration: underline !important;
 			}
+				.test-question:hover .test-question-mistake {
+					opacity: 0.5;
+				}
 				.test-question-mistake:hover {
-					opacity: 1;
+					opacity: 1 !important;
 				}
 		.test-endButton {
 			margin: 50px auto 30px;
 		}
-		.test-results {
 
+		.main-test__results {
+			border-top: 1px solid #DBDBDB;
+			padding-top: 20px;
 		}
+			.results-ball {
+				vertical-align: top;
+				width: 25%;
+				float: left;
+				text-align: center;
+			}
+				.results-ball_title {
+					display: block;
+					font-size: 15px;
+					font-weight: bold;
+				}
+				.results-ball_content {
+					display: block;
+					font-size: 19px;
+					margin-top: 10px;
+				}
+				.results-ball_time {
+					display: block;
+					font-size: 14px;
+					line-height: 22px;
+					margin-top: 6px;
+				}
+			.results-line {
+				margin-top: 20px;
+				margin-bottom: 40px;
+				height: 6px;
+				background: #DBDBDB;
+				border-radius: 6px;
+				width: 100%;
+				overflow: hidden;
+			}
+				.results-line span {
+					height: 6px;
+					display: block;
+					background: #519731;
+				}
 
 
 .sidebar {
