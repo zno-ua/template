@@ -136,13 +136,13 @@ html, body {
 	max-width: 1200px;
 	min-width: 1000px;
 	margin: 0 auto;
-	padding-bottom: 1%;
+	padding: 1% 0;
 }
 	.bookshelf-book {
 		float: left;
 		display: block;
 		width: 18%;
-		margin: 2% 1% 0%;
+		margin: 1% 1% 0%;
 		border-bottom: none;
 		text-decoration: none;
 	}
