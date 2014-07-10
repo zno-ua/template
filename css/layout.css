@@ -128,10 +128,46 @@ html, body {
 /* ---------- BOOKSHELF --------------*/
 /* -----------------------------------*/
 
-.bookshelf {
-	height: 30px;
+.bookshelf__w {
 	background: #f4f4f4;
 }
+
+.bookshelf {
+	max-width: 1200px;
+	min-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 2%;
+}
+	.bookshelf-book {
+		float: left;
+		display: block;
+		width: 18%;
+		margin: 2% 1% 0%;
+		border-bottom: none;
+		text-decoration: none;
+	}
+		.bookshelf-book:first-child {
+			margin-left: 0px !important;
+		}
+		.bookshelf-book:last-child {
+			margin-right: 0px !important;
+		}
+		.bookshelf-book-pic {
+			margin: 5px auto;
+			display: block;
+			width: 155px;
+			height: 205px;
+		}
+			.bookshelf-book-pic__ukrainian {
+				background: url('../temp/ukrainian-main.png');
+			}
+		.bookshelf-book-title {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: block;
+			text-align: center;
+			color: #424242;
+		}
 
 /* -----------------------------------*/
 /* ----------- CONTENT ---------------*/
@@ -224,7 +260,7 @@ html, body {
 			}
 	.content {
 		float: right;
-		width: 69%;
+		width: 74%;
 		padding-right: 1%;
 
 		font-family: "Open Sans";
@@ -251,15 +287,11 @@ html, body {
 				margin-top: 5px;
 				margin-left: 20px;
 				list-style: decimal;
-				color: #824815;
+				color: #666666;
 			}
 				.content-lessonItem-list-link {
 					line-height: 25px;
-					color: #824815;
 				}
-					.content-lessonItem-list-link:hover {
-						color: #B65500;
-					}
 
 		.content-lessonAdvice {
 		}
@@ -494,14 +526,13 @@ html, body {
 
 
 .sidebar {
-	width: 29%;
+	width: 24%;
 	padding-left: 1%;
 	float: left;
 }
 	.sidebar-lessonPic {
 		width: 200px;
 		height: 264px;
-		/*margin: 0 auto 0;*/
 	}
 	.sidebar-lessonLikes {
 		margin: 30px 0;
